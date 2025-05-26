@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youssef Ihihi | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-900 transition duration-300">
+  <header class="bg-blue-900 text-white p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Youssef Ihihi</h1>
+    <nav class="space-x-4">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button onclick="toggleDarkMode()" class="bg-yellow-400 text-black px-2 py-1 rounded">☀️ / 🌙</button>
+    </nav>
+  </header>
+
+  <main class="p-6">
+    <!-- About -->
+    <section id="about" class="text-center mt-10 animate-fade">
+      <img src="images/me.jpg" alt="My Photo" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4" />
+      <h2 class="text-3xl font-bold">About Me</h2>
+      <p class="mt-2 text-lg">Diplômé en baccalauréat à l’âge de 18 ans, j’ai étudié à la
+Faculté des sciences Hassan II, avec une spécialisation en
+biologie, et je poursuis actuellement mes études à l’OFPPT.
+J'ai une expérience dans le commerce de terrain et le
+commerce digital. Curieux par nature et très minutieux, je suis
+capable de trouver des solutions à toutes sortes de
+problèmes. Ce qui me distingue, c’est ma créativité, mon sens
+de l’organisation et mon esprit d’équipe. Je respecte toujours
+les délais, et je suis une personne polyvalente, capable de
+gérer plusieurs tâches en même temps. Mes supérieurs
+mentionnent souvent, lors de mes évaluations de
+performance, qu’ils apprécient mon professionnalisme et mon
+enthousiasme pour le travail.</p>
+      <a href="cv.pdf" download class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">📄 Download CV</a>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mt-16 text-center animate-fade">
+      <h2 class="text-3xl font-bold mb-6">Skills</h2>
+      <div class="max-w-xl mx-auto space-y-4">
+        <div class="text-left">
+          <p>Configuration du materiel informatique</p>
+          <div class="w-full bg-gray-300 rounded-full">
+            <div class="bg-blue-600 text-xs leading-none py-1 text-center text-white rounded-full w-11/12 animate-skill">90%</div>
+          </div>
+        </div>
+        <div class="text-left">
+          <p>Virtualisation</p>
+          <div class="w-full bg-gray-300 rounded-full">
+            <div class="bg-blue-600 text-xs leading-none py-1 text-center text-white rounded-full w-10/12 animate-skill">85%</div>
+          </div>
+        </div>
+        <div class="text-left">
+          <p>Python</p>
+          <div class="w-full bg-gray-300 rounded-full">
+            <div class="bg-blue-600 text-xs leading-none py-1 text-center text-white rounded-full w-8/12 animate-skill">75%</div>
+          </div>
+        </div>
+        <div class="text-left">
+          <p>Language C</p>
+          <div class="w-full bg-gray-300 rounded-full">
+            <div class="bg-blue-600 text-xs leading-none py-1 text-center text-white rounded-full w-9/12 animate-skill">80%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mt-16 text-center animate-fade">
+      <h2 class="text-3xl font-bold mb-6">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white dark-box p-4 rounded shadow">
+          <h3 class="font-semibold text-xl">E-commerce Website</h3>
+          <p class="mt-2 text-sm">Online store for computer parts built with HTML/CSS/JS.</p>
+        </div>
+        <div class="bg-white dark-box p-4 rounded shadow">
+          <h3 class="font-semibold text-xl">Portfolio Website</h3>
+          <p class="mt-2 text-sm">Responsive portfolio website to showcase my skills and CV.</p>
+        </div>
+        <div class="bg-white dark-box p-4 rounded shadow">
+          <h3 class="font-semibold text-xl">Python Bank App</h3>
+          <p class="mt-2 text-sm">Banking system in Python with OOP and file handling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-16 text-center animate-fade">
+      <h2 class="text-3xl font-bold mb-6">Contact</h2>
+      <p>Email: y.ihihi2005@gmail.com</p>
+    </section>
+  </main>
+
+  <footer class="text-center mt-10 p-4 border-t border-gray-300 dark-border">
+    © 2025 Youssef Ihihi. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

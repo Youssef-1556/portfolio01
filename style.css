@@ -1,0 +1,35 @@
+/* Fade animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Bar skill animation */
+@keyframes growWidth {
+  0% { width: 0; }
+}
+.animate-skill {
+  animation: growWidth 1s ease forwards;
+}
+
+/* Dark mode overrides */
+body.dark {
+  background-color: #1a202c;
+  color: #f9fafb;
+}
+body.dark .bg-white {
+  background-color: #2d3748 !important;
+}
+body.dark .text-gray-900,
+body.dark .text-black {
+  color: #f9fafb !important;
+}
+body.dark .border-gray-300 {
+  border-color: #4a5568 !important;
+}
+body.dark .dark-box {
+  background-color: #2d3748 !important;
+}
